@@ -42,5 +42,4 @@ public class indexOfAnElemUsingLinearSearch{
             System.out.println("Element 5 is placed at index position " + foundIndexPosition + " in an Array");
         }
     }
-
 }
