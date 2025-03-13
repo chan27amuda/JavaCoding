@@ -4,7 +4,7 @@ public class FrequencyOfCharactertersWithoutUsingHashMapInString {
 
 	public static void main(String[] args) {
 
-		String str = "abccaaddfr rgtt";
+		String str = "abccaabdd";
 		int frequency[] = new int[256];
 
 		char[] inputArray = str.toCharArray();
@@ -16,7 +16,7 @@ public class FrequencyOfCharactertersWithoutUsingHashMapInString {
 
 		for (int i = 0; i < frequency.length; i++) {
 			if (frequency[i] > 0) {
-				System.out.println((char) i + "" + frequency[i]);
+				System.out.print((char) i + "" + frequency[i]);
 			}
 		}
 	}

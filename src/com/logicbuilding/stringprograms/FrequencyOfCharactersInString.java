@@ -6,7 +6,7 @@ public class FrequencyOfCharactersInString {
 
 	public static void main(String[] args) {
 
-		String str = "aaaabbbccd aabddcee";
+		String str = "aaabbccbdca";
 
 		// Convert String to charArray
 		char[] inputArray = str.toCharArray();
