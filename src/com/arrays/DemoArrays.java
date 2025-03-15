@@ -17,6 +17,8 @@ public class DemoArrays {
 		marks[0] = 80;
 		marks[1] = 90;
 		marks[2] = 70;
+		
+		int marks1[] = new int[marks.length];
 
 		for (int index = 0; index <= marks.length - 1; index++) {
 			System.out.println(marks[index]);

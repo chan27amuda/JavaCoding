@@ -1,4 +1,4 @@
-package com.logicbuilding;
+package com.logicbuilding.arrayprograms;
 
 import java.util.HashSet;
 import java.util.Set;
