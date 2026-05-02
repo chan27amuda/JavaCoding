@@ -4,8 +4,8 @@ public class NumberIsArmstrongOrNot {
 
 	public static void main(String[] args) {
 
-		int number = 153;
-		int armStrongNumber;
+		long number = 153;
+		long armStrongNumber;
 
 		armStrongNumber = checkIfNumberisArmstrongOrNot(number);
 		if (armStrongNumber == number) {
@@ -16,14 +16,22 @@ public class NumberIsArmstrongOrNot {
 
 	}
 
-	public static int checkIfNumberisArmstrongOrNot(int number) {
-		int result = 0;
-		int lastDigit;
+	public static long checkIfNumberisArmstrongOrNot(long number) {
+		long result = 0;
+		long lastDigit;
+		int digitCount = 0;
+		long temp = number;
 
-		while (number != 0) {
-			lastDigit = number % 10;
-			result = result + (lastDigit * lastDigit * lastDigit);
-			number = number / 10;
+		while (temp != 0) {
+			digitCount++;
+			temp = temp / 10;
+		}
+
+		temp = number;
+		while (temp != 0) {
+			lastDigit = temp % 10;
+			result = result + (long) Math.pow(lastDigit, digitCount);
+			temp = temp / 10;
 		}
 
 		return result;
